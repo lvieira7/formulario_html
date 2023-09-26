@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            display: flex;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            flex-direction: column;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        #formulario {
+            width: 500px;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .campo {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 50%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <div id="formulario">
+        <div class="campo">
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome">
+        </div>
+
+        <div class="campo">
+            <label for="email">Digite seu e-mail:</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="campo">
+            <label for="senha">Digite sua senha:</label>
+            <input type="password" id="senha">
+        </div>
+
+        <button type="submit">Enviar</button>
+    </div>
+
+    <footer>
+        &copy; Lucas Queiroz Vieira - Dono do Projeto
+    </footer>
+</body>
+
+</html>
